@@ -6,8 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: $dark;
-  color: $snow;
+  background: radial-gradient(ellipse at center, $light 0%, $light-gray 100%);
+  color: $dark;
 }
 
 code {

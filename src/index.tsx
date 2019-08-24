@@ -5,11 +5,13 @@ import { BrowserRouter } from 'react-router-dom';
 import { createStore, compose, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { createEpicMiddleware } from 'redux-observable';
-import App from './appRoot/App';
-import rootEpic from './store/rootEpics';
-import rootReducer from './store/rootReducers';
+import App from './app/App';
+import rootEpic from './redux/rootEpics';
+import rootReducer from './redux/rootReducers';
 import * as serviceWorker from './serviceWorker';
 
+import 'antd/dist/antd.css';
+// import './styles.css';
 import './assets/css/main.scss';
 
 const composeEnhancers =

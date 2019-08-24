@@ -1,13 +1,13 @@
 import { lazy } from 'react';
 
-const Public = lazy(() => import('module/Public/Public'));
+const About = lazy(() => import('views/About'));
 
 const publicRoutesList = [
   {
-    component: Public,
+    component: About,
     exact: true,
-    id: 'public-id',
-    path: '/public',
+    id: 'about-id',
+    path: '/about',
   },
 ];
 
@@ -18,9 +18,9 @@ const PublicRoutes = (isLoggedIn: boolean) => {
     publicRoutes = [
       ...publicRoutesList,
       {
-        component: Public,
+        component: About,
         exact: true,
-        id: 'public-id',
+        id: 'about-id',
         path: '/',
       },
     ];

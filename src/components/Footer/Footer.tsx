@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <section className="footer-section">
-      <span>&copy; nenjotsu 2019</span>
+      <span>nenjotsu &copy; 2019</span>
     </section>
   );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import AppContext from 'appRoot/App.context';
+import Button from 'antd/lib/button';
+import AppContext from 'app/App.context';
 
 const Navigation = () => {
   const { isLoggedIn, onLogin, onLogout } = React.useContext(AppContext);
@@ -12,20 +13,20 @@ const Navigation = () => {
           <Link to="/" className="link">
             Home
           </Link>
-          <Link to="/test" className="link">
+          {/* <Link to="/test" className="link">
             Test
+          </Link> */}
+          <Link to="/about" className="link">
+            About
           </Link>
-          <Link to="/public" className="link">
-            Public
-          </Link>
-          <button className="action-button" onClick={onLogout}>
+          <Button className="action-button" onClick={onLogout}>
             Logout
-          </button>
+          </Button>
         </>
       ) : (
-        <button className="action-button" onClick={onLogin}>
+        <Button className="action-button" onClick={onLogin}>
           Login
-        </button>
+        </Button>
       )}
     </div>
   );

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { getHomeDataEpics } from '../../store/home/actions';
+import Button from 'antd/lib/button';
+import { getHomeDataEpics } from '../../redux/home/actions';
 
 interface TestProps {
   getHomeDataEpics: () => void;
@@ -36,8 +37,8 @@ class Test extends React.Component<TestProps, TestState> {
       <div>
         <h1>Test component</h1>
         {this.state.status ? 'im true' : 'im false'}
-        <button onClick={this.onGetBlog}>get blog</button>
-        <button onClick={this.handleChangeStatus}>Change status</button>
+        <Button onClick={this.onGetBlog}>get blog</Button>
+        <Button onClick={this.handleChangeStatus}>Change status</Button>
       </div>
     );
   }
