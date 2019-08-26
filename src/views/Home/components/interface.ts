@@ -1,5 +1,4 @@
 export interface ReduxAction {
-  getHomeDataEpics: () => {};
   createSessionEpic: Function;
   pollSessionEpic: Function;
   pollSessionClearData: Function;

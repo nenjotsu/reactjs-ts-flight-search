@@ -1,9 +1,5 @@
 import { createAction } from 'redux-actions';
 import * as TYPE from './types';
-export const getHomeDataEpics = createAction(TYPE.GET_HOME_DATA_EPIC);
-export const getHomeDataLoading = createAction(TYPE.GET_HOME_DATA_LOADING);
-export const getHomeDataSuccess = createAction(TYPE.GET_HOME_DATA_SUCCESS);
-export const getHomeDataError = createAction(TYPE.GET_HOME_DATA_ERROR);
 
 export const createSessionEpic = createAction(TYPE.CREATE_SESSION_EPIC);
 export const createSessionSuccess = createAction(TYPE.CREATE_SESSION_SUCCESS);

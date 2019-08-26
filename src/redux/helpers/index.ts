@@ -22,56 +22,6 @@ export const url = {
     `${flightSearchDomain}/uk2/v1.0/${sessionkey}?pageIndex=0&pageSize=10`,
 };
 
-// fetch(
-//   'https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/v1.0',
-//   {
-//     method: 'POST',
-//     headers: {
-//       'x-rapidapi-host':
-//         'skyscanner-skyscanner-flight-search-v1.p.rapidapi.com',
-//       'x-rapidapi-key': '58ZJm7qOgEmsh2dIqPpoXtpelIv2p1QVxRgjsngRKxYnw73Zok',
-//       'content-type': 'application/x-www-form-urlencoded',
-//     },
-//     body: {
-//       inboundDate: {},
-//       cabinClass: {},
-//       children: {},
-//       infants: {},
-//       country: {},
-//       currency: {},
-//       locale: {},
-//       originPlace: {},
-//       destinationPlace: {},
-//       outboundDate: {},
-//       adults: {},
-//     },
-//   },
-// )
-//   .then(response => {
-//     console.log(response);
-//   })
-//   .catch(err => {
-//     console.log(err);
-//   });
-
-// fetch(
-//   'https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/pricing/uk2/v1.0/%7Bsessionkey%7D?pageIndex=0&pageSize=10',
-//   {
-//     method: 'GET',
-//     headers: {
-//       'x-rapidapi-host':
-//         'skyscanner-skyscanner-flight-search-v1.p.rapidapi.com',
-//       'x-rapidapi-key': '58ZJm7qOgEmsh2dIqPpoXtpelIv2p1QVxRgjsngRKxYnw73Zok',
-//     },
-//   },
-// )
-//   .then(response => {
-//     console.log(response);
-//   })
-//   .catch(err => {
-//     console.log(err);
-//   });
-
 export const multiDispatch = ({ dispatch }: any) => (next: any) => (
   action: any,
 ) => {
