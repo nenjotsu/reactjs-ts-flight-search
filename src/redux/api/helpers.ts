@@ -10,7 +10,6 @@ export const retryStrategy = (errors: any) =>
 
 export const headersJson = {
   'Content-Type': 'application/json',
-  // Authorization: `Bearer ${TOKEN}`,
   'x-rapidapi-host': 'skyscanner-skyscanner-flight-search-v1.p.rapidapi.com',
   'x-rapidapi-key': '58ZJm7qOgEmsh2dIqPpoXtpelIv2p1QVxRgjsngRKxYnw73Zok',
 };

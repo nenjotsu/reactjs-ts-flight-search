@@ -1,9 +1,3 @@
-export const GET_HOME_DATA_EPIC = 'GET_HOME_DATA_EPIC';
-export const GET_HOME_DATA_SUCCESS = 'GET_HOME_DATA_SUCCESS';
-export const GET_HOME_DATA_ERROR = 'GET_HOME_DATA_ERROR';
-export const GET_HOME_DATA_LOADING = 'GET_HOME_DATA_LOADING';
-export const GET_HOME_DATA_CANCEL = 'GET_HOME_DATA_CANCEL';
-
 export const CREATE_SESSION_EPIC = '[create_session] Epic';
 export const CREATE_SESSION_SUCCESS = '[create_session] Success';
 export const CREATE_SESSION_CANCEL = '[create_session] Cancel';

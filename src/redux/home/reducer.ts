@@ -1,17 +1,9 @@
 import { handleActions } from 'redux-actions';
 import * as lodash from 'lodash';
-import {
-  getHomeDataSuccess,
-  getHomeDataError,
-  getHomeDataLoading,
-  createSessionSuccess,
-  pollSessionSuccess,
-  pollSessionClearData,
-} from './actions';
+import { pollSessionSuccess, pollSessionClearData } from './actions';
 import Model from './model';
 
 interface HomeReducer {
-  homeData: object;
   loading: boolean;
 }
 
@@ -55,26 +47,6 @@ const mapDataSource = (records: any) => {
 
 export default handleActions<HomeReducer, Payload>(
   {
-    [getAction(getHomeDataSuccess)]: (state: object, action: any) => ({
-      ...state,
-      homeData: action.payload,
-      loading: false,
-    }),
-    [getAction(getHomeDataLoading)]: state => ({
-      ...state,
-      loading: true,
-    }),
-    [getAction(getHomeDataError)]: (state, action) => ({
-      ...state,
-      error: action.payload,
-      loading: false,
-    }),
-    [getAction(createSessionSuccess)]: (state, action: Payload) => ({
-      ...state,
-      createSession: {
-        [`${action.payload.date}`]: action.payload.records,
-      },
-    }),
     [getAction(pollSessionSuccess)]: (state, action: Payload) => ({
       ...state,
       pollSession: action.payload,
