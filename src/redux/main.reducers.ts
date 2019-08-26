@@ -1,9 +1,10 @@
 import { combineReducers } from 'redux';
-
-import homeReducer from './home/reducer';
+import home from './home/reducer';
+import ui from './ui/reducers';
 
 const rootReducers = combineReducers({
-  homes: homeReducer,
+  home,
+  ui,
 } as any);
 
 export default rootReducers;

@@ -7,7 +7,7 @@ const Public = () => {
 
       <div className="author-information">
         <span className="title">Renenjo Valente</span>
-        <span className="position _spacer">Senior Frontend developer</span>
+        <span className="position _spacer">Senior Frontend Developer</span>
       </div>
     </section>
   );

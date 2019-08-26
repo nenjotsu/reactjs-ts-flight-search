@@ -7,7 +7,14 @@
     "email": "renenjo.valente@gmail.com",
     "url": "https://github.com/nenjotsu/reactjs-ts-flight-search"
   },
-  "keywords": ["reactjs", "typescript", "ts", "react", "redux", "rxjs"],
+  "keywords": [
+    "reactjs",
+    "typescript",
+    "ts",
+    "react",
+    "redux",
+    "rxjs"
+  ],
   "dependencies": {
     "@types/enzyme": "^3.10.3",
     "@types/enzyme-adapter-react-16": "^1.0.5",
@@ -21,8 +28,11 @@
     "antd": "3.22.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
+    "fetch": "1.1.0",
+    "lodash": "4.17.15",
     "moment": "2.24.0",
     "node-sass": "^4.12.0",
+    "query-string": "6.8.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.0",
@@ -31,6 +41,7 @@
     "redux": "^4.0.4",
     "redux-actions": "^2.6.5",
     "redux-observable": "^1.1.0",
+    "request": "2.88.0",
     "typescript": "3.5.3"
   },
   "scripts": {
@@ -53,5 +64,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.137",
+    "@types/request": "2.48.2"
   }
 }
